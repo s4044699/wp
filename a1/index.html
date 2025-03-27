@@ -5,28 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GamesRUs</title>
 
-    <!-- linking the css file -->
+    
     <link rel="stylesheet" href="css/styles.css">
-    <!-- google fonts --> 
+    
     <link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC&family=Parkinsans&family=Ga+Maamli&display=swap" rel="stylesheet">
-    <!-- material fonts-->
+    
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
-<body>
+<body class="home">
 
     <header>
+        <img src="images/logo.png" alt="GamesRUs Small Logo" class="small-logo">
         <h1>Welcome to GamesRUs</h1>
+        <nav>
+            <ul>
+                <li><a href="games.html">Games</a></li>
+                <li class="dropdown">
+                    <a href="addmore.html" class="dropbtn">Add More</a>
+                    <div class="dropdown-content">
+                        <a href="add-game.html">Add a Game</a>
+                        <a href="add-review.html">Add a Review</a>
+                        <a href="add-news.html">Add News</a>
+                    </div>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
     </header>
+    
     
     <main>
         <P>Your one-stop shop for all things gaming!</P>
+        <img src="images/main.jpeg" alt="GamesRUs Main Logo" class="main-logo">
+        <section class="panel" onclick="location.href='games.html'">
+            <img src="images/games3.jpeg" alt="Games">
+            <h2>Games</h2>
+            <p>Explore our games collection.</p>
+        </section>
+    
+        <section class="panel" onclick="location.href='addmore.html'">
+            <img src="images/video games.jpeg" alt="Add More">
+            <h2>Add More</h2>
+            <p>Add games, reviews, and news to the site.</p>
+        </section>
+    
+        <section class="panel" onclick="location.href='gallery.html'">
+            <img src="images/games.jpeg" alt="Gallery">
+            <h2>Gallery</h2>
+            <p>Check out our game gallery.</p>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Ammo Dulacha</p>
+        <p>&copy; Copyright S4044699 | All Rights Reserved 2025 </p>
     </footer>
 
 </body>
-</html>
+</html>  
 

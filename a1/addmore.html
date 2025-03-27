@@ -4,18 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add More Games - GamesRUs</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="js/script.js" defer></script>
 </head>
 <body>
-    <!-- Header and Navigation Bar -->
+    
     <header>
         <nav>
             <ul>
-                <li><a href="index.html"><img src="logo.jpeg" alt="GamesRUs Logo"></a></li>
+                <li>
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="GamesRUs Logo" class="nav-logo">
+                    </a>
+                </li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="games.html">Games</a></li>
-                <li><a href="addmore.html">Add More</a></li>
+                <li class="dropdown">
+                    <a href="addmore.html" class="dropbtn">Add More</a>
+                    <div class="dropdown-content">
+                        <a href="add-game.html">Add a Game</a>
+                        <a href="add-review.html">Add a Review</a>
+                        <a href="add-news.html">Add News</a>
+                    </div>
+                </li>
                 <li><a href="gallery.html">Gallery</a></li>
             </ul>
             <form>
@@ -23,8 +34,9 @@
             </form>
         </nav>
     </header>
-
-    <!-- Main Content -->
+    
+    
+    
     <main>
         <h1>Add a New Game</h1>
         <p>Fill in the form below to add a new game to our catalog!</p>
@@ -46,23 +58,24 @@
         </form>
     </main>
 
-    <!-- Footer -->
+   
     <footer>
-        <p>&copy; 2025 Ammo Dulacha. All rights reserved.</p>
+        <p>&copy; Copyright S4044699 | All Rights Reserved 2025 </p>
     </footer>
 
+
     <script>
-        // JavaScript to handle form submission
+        
         const form = document.getElementById('addGameForm');
         form.addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent the form from submitting normally
+            event.preventDefault(); 
 
             const gameName = document.getElementById('gameName').value;
             const gameDescription = document.getElementById('gameDescription').value;
             const gamePrice = document.getElementById('gamePrice').value;
             const gameImage = document.getElementById('gameImage').value;
 
-            // Swe'll log the data to the console
+            
             console.log("Game Name:", gameName);
             console.log("Description:", gameDescription);
             console.log("Price:", gamePrice);

@@ -4,18 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery - GamesRUs</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="js/script.js" defer></script>
 </head>
 <body>
-    <!-- Header and Navigation Bar -->
     <header>
         <nav>
             <ul>
-                <li><a href="index.html"><img src="logo.jpeg" alt="GamesRUs Logo"></a></li>
+                <li><a href="index.html"><img src="images/logo.png" alt="GamesRUs Logo"></a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="games.html">Games</a></li>
-                <li><a href="addmore.html">Add More</a></li>
+                <li class="dropdown">
+                    <a href="addmore.html" class="dropbtn">Add More</a>
+                    <div class="dropdown-content">
+                        <a href="add-game.html">Add a Game</a>
+                        <a href="add-review.html">Add a Review</a>
+                        <a href="add-news.html">Add News</a>
+                    </div>
+                </li>
                 <li><a href="gallery.html">Gallery</a></li>
             </ul>
             <form>
@@ -23,37 +29,50 @@
             </form>
         </nav>
     </header>
-
-    <!-- Main Content -->
+    
+    
     <main>
         <h1>Game Gallery</h1>
         <p>Check out some of the amazing games we have available!</p>
 
         <div class="gallery-container">
-            <!-- Example Game Images -->
-            <div class="gallery-item">
-                <img src="path_to_image/zelda.jpg" alt="The Legend of Zelda">
-                <p>The Legend of Zelda: Breath of the Wild</p>
+           
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="images/thewitcher.jpeg" alt="The Witcher 3">
+                    <h2>The Witcher 3: Wild Hunt</h2>
+                </div>
+            
+                <div class="gallery-item">
+                    <img src="images/fortnite.jpeg" alt="Fortnite">
+                    <h2>Fortnite</h2>
+                </div>
+            
+                <div class="gallery-item">
+                    <img src="images/overwatch 2.jpg" alt="Overwatch 2">
+                    <h2>Overwatch 2</h2>
+                </div>
+            
+                <div class="gallery-item">
+                    <img src="images/spiderman miles morales.jpeg" alt="Spider-Man: Miles Morales">
+                    <h2>Spider-Man: Miles Morales</h2>
+                </div>
+            
+                <div class="gallery-item">
+                    <img src="images/hello kitty island adventure.jpeg" alt="Hello Kitty Island Adventure">
+                    <h2>Hello Kitty Island Adventure</h2>
+                </div>
             </div>
-
-            <div class="gallery-item">
-                <img src="path_to_image/hello_kitty_island.jpg" alt="Hello Kitty Island Adventure">
-                <p>Hello Kitty Island Adventure</p>
-            </div>
-
-            <div class="gallery-item">
-                <img src="path_to_image/animal_crossing.jpg" alt="Animal Crossing: New Horizons">
-                <p>Animal Crossing: New Horizons</p>
-            </div>
-
-            <!-- Add more gallery items here -->
+            
+            
         </div>
     </main>
 
-    <!-- Footer -->
+    
     <footer>
-        <p>&copy; 2025 Ammo Dulacha. All rights reserved.</p>
+        <p>&copy; Copyright S4044699 | All Rights Reserved 2025 </p>
     </footer>
+
 </body>
 </html>
 
