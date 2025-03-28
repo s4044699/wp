@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <header>
+        <h1>Forms</h1>
+    </header>
+    <nav>
+        <form>
+            <select name="" id="">
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3" selected>Option 3</option>
+                <option value="4">Option 4</option>
+            </select>
+        </form>
+    </nav>
+    <main>
+        <form action="submit.php" method="post">
+            <fieldset>
+                <legend>Personal details</legend>
+                <label for="name">Name:*</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="dob"></label>
+                <input type="date" id="dob" name="dob" required>
+            </fieldset>
+            <fieldset>
+                <legend>Login details</legend>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </fieldset>
+            <fieldset>
+                <legend>Message</legend>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Test</legend>
+                <label for="test">Test:</label>
+                <input type="checkbox" id="test" name="test" required>
+                <label for="radio"></label>
+                <input type="radio" name="a" id="a">A
+                <input type="radio" name="a" id="b">B
+                <input type="radio" name="a" id="c">C <br>
+                <label for="file">File:</label>
+                <input type="file" id="file" name="file" required>
+            </fieldset>
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+        </form>
+    </main>
+    <footer>&copy;Your name here 2025</footer>
+</body>
+
+</html>
